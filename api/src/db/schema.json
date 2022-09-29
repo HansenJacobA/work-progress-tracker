@@ -1,0 +1,19 @@
+{
+  "topic": {
+    "id": "string",
+    "name": "string",
+    "complete": "boolean",
+    "completedAt": "number",
+    "createdAt": "number"
+  },
+  "entry": {
+    "id": "string",
+    "topic": "string",
+    "createdAt": "number",
+    "question1": "string",
+    "question2": "string",
+    "question3": "string",
+    "question4": "string",
+    "notes": "string"
+  }
+}
