@@ -60,6 +60,11 @@ This is like Twitter, no edits allowed, just write what is current and be able t
 
 ### Continued development
 - Add visuals showing dates that topics were marked complete in a time graph.
+- Incorporate any sort of data visualization.
+  - Courses to learn how to add DV 
+    - [SVG Essentials & Animation, v2](https://frontendmasters.com/courses/svg-essentials-animation/)
+    - [Building Custom Data Visualizations](https://frontendmasters.com/courses/d3-js-custom-charts/)
+    - [Data Visualization for React Developers](https://frontendmasters.com/courses/d3-js-react/)
 
 ### Useful resources
   #### Backend
@@ -68,9 +73,12 @@ This is like Twitter, no edits allowed, just write what is current and be able t
   - [CORS](https://www.npmjs.com/package/cors) - CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
   #### Frontend
   - [Webpack Bundle Analyzer](https://blog.jakoblind.no/webpack-bundle-analyzer/#how-to-configure-webpack-bundle-analyzer-cli)
-  - [Compression Webpack Plugin](https://github.com/webpack-contrib/compression-webpack-plugin#minratio)
+  - [Webpack Compression Plugin](https://github.com/webpack-contrib/compression-webpack-plugin#minratio)
   - [Webpack Source Maps](https://webpack.js.org/configuration/devtool/) Used for debugging frontend in dev-tools via breakpoints and watch variables.
+  - [Webpack Preloading](https://frontendmasters.com/courses/performance-webpack/webpack-prefetch-preload/) Consider preloading into service worker cache for fast retrieval of data at no cost. Preloading itself has a cost.
   - [Dark Patterns](https://www.deceptive.design/)
+  - [Web Workers](https://frontendmasters.com/courses/service-workers/creating-a-worker/) Critical for UX and App performance.
+  - [Service Workers](https://serviceworke.rs/) An upgrade from web workers b/c it persists/stays alive after closed tabs, unlike WW's.
 
 ## Author
 - [Portfolio](https://hansenjacoba.github.io/)

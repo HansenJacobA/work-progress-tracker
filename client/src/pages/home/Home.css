@@ -1,0 +1,13 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 80vh;
+}
+
+.home button {
+    width: calc(6rem + 1vw);
+    height: calc(2rem + 1vw);
+    font-size: calc(0.3em + 1vw);
+}

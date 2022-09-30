@@ -25,7 +25,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.1"
+    "react-router-dom": "^6.4.1",
+    "react-spinners": "^0.13.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
@@ -38,6 +39,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
+    "source-map-loader": "^4.0.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.74.0",
     "webpack-bundle-analyzer": "^4.6.1",

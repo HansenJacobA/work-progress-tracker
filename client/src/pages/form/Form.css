@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.form textarea {
+    width: calc(17rem + 1vw);
+    height: calc(7rem + 1vw);
+}
+
+.form input {
+    width: calc(17rem + 1vw);
+    margin-bottom: 0.5em;
+}
+
+.form button {
+    width: calc(4rem + 1vw);
+    height: calc(1rem + 1vw);
+    font-size: calc(0.2em + 1vw);
+    margin-bottom: 0.4em;
+}
