@@ -1,29 +1,26 @@
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
 
 const entryModel = db => {
     return {
-        findMany(filter) {
-            return db.get('entry')
-                .filter(filter)
-                .value()
+        findMany({ selectedTopic }) {
+            return db.data.entry.filter(({ topic }) => topic === selectedTopic);
         },
 
-        findOne(filter) {
-            return db.get('entry')
-                .find(filter)
-                .value()
+        findOne({ selectedId }) {
+            return db.data.entry.find(({ id }) => id === selectedId);
         },
 
         create(entry) {
-            const newEntry = { id: nanoid(), createdAt: Date.now(), ...entry }
 
-            db.get('entry')
-                .push(newEntry)
-                .write()
+            const newEntry = { id: nanoid(), createdAt: Date.now(), ...entry.data };
 
-            return newEntry
+            db.data.entry.push(newEntry);
+
+            db.write();
+
+            return newEntry;
         }
     }
 }
 
-export default entryModel
+export default entryModel;

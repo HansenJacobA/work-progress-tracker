@@ -1,23 +1,27 @@
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
 
 const topicModel = db => {
     return {
 
-        findOne(filter) {
-            return db.get('topic')
-                .find(filter)
-                .value()
+        findOne(selectedId) {
+            return db.data.topic.find(({ id }) => id === selectedId);
+        },
+
+        findAll() {
+            return db.data.topic;
         },
 
         create(topic) {
-            const newTopic = { id: nanoid(), createdAt: Date.now(), ...topic }
-            db.get('topic')
-                .push(newTopic)
-                .write()
 
-            return newTopic
+            const newTopic = { id: nanoid(), createdAt: Date.now(), ...topic };
+
+            db.data.topic.push(newTopic);
+
+            db.write();
+
+            return newTopic;
         }
-    }
-}
+    };
+};
 
-export default topicModel
+export default topicModel;

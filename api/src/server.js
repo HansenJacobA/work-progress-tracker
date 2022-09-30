@@ -20,7 +20,7 @@ app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
-app.use('/api/event', eventRouter)
+app.use('/api/entry', eventRouter)
 app.use('/api/topic', topicRouter)
 
 export const start = async () => {

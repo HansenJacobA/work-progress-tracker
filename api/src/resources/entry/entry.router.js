@@ -1,17 +1,17 @@
-import { Router } from 'express'
-import { findOne, findMany, create } from './entry.controller.js'
+import { Router } from 'express';
+import { findMany, create } from './entry.controller.js';
 
-const router = Router()
+const router = Router();
 
-// /api/item
+// /api/entry
 router
   .route('/')
   .get(findMany)
-  .post(create)
+  .post(create);
 
-// /api/item/:id
+// /api/entry/topic/:name
 router
-  .route('/:id')
-  .get(findOne)
+  .route('/topic/:name')
+  .get(findMany);
 
-export default router
+export default router;

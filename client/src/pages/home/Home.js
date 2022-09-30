@@ -8,7 +8,7 @@ const Home = () => (
             <button >New Entry</button>
         </Link>
 
-        <Link>
+        <Link to='/search'>
             <button >Search Entries</button>
         </Link>
     </section>
