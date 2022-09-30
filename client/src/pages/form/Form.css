@@ -8,18 +8,38 @@
 }
 
 .form textarea {
-    width: calc(17rem + 1vw);
+    width: calc(20rem + 1vw);
     height: calc(7rem + 1vw);
+    margin-bottom: 1em;
+}
+
+.form label {
+    display: block;
 }
 
 .form input {
-    width: calc(17rem + 1vw);
-    margin-bottom: 0.5em;
+    height: calc(1.2em + 1vw);
+    width: calc(20rem + 1vw);
+    margin-bottom: 1em;
 }
 
 .form button {
+    display: block;
     width: calc(4rem + 1vw);
     height: calc(1rem + 1vw);
     font-size: calc(0.2em + 1vw);
+    margin: 0 auto;
     margin-bottom: 0.4em;
+}
+
+.form-button {
+    text-decoration: none;
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    .form {
+        background-color: var(--navy);
+    }
 }

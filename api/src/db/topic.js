@@ -13,7 +13,7 @@ const topicModel = db => {
 
         create(topic) {
 
-            const newTopic = { id: nanoid(), createdAt: Date.now(), ...topic };
+            const newTopic = { id: nanoid(), createdAt: new Date().toLocaleString(), ...topic };
 
             db.data.topic.push(newTopic);
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
     <footer>
-        Footer
+        Created by Jacob Hansen 🤡
     </footer>
 );
 

@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import css from './Previews.css';
+import { useLocation } from 'react-router-dom';
+import css from './Entry.css';
 
-const Previews = ({ entry }) => (
-    <Link to='/entry' state={{ entry }} className='preview-link'>
-        <li className="previews">
+const Entry = () => {
+    const location = useLocation();
+    const { entry } = location.state;
+    return (
+        <section className="entry">
             <label>Topic:</label>
             <p>{entry.topic}</p>
             <label>Created at:</label>
@@ -17,8 +19,8 @@ const Previews = ({ entry }) => (
             <p>{entry.continued}</p>
             <label>Blockers:</label>
             <p>{entry.blockers}</p>
-        </li>
-    </Link>
-);
+        </section>
+    );
+}
 
-export default Previews;
+export default Entry;

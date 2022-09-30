@@ -7,6 +7,7 @@ import Loader from '../pages/loader/Loader';
 import Home from '../pages/home/Home';
 import Form from '../pages/form/Form';
 import Search from '../pages/search/Search';
+import Entry from '../pages/entry/Entry';
 
 const App = () => {
   return (
@@ -15,10 +16,11 @@ const App = () => {
       <Nav />
 
       <Routes>
-        {/* <Route path='*' element={<Loader />} />
+        <Route path='*' element={<Loader />} />
         <Route path='/' element={<Home />} />
-        <Route path='/form' element={<Form />} /> */}
-        <Route path='/' element={<Search />} />
+        <Route path='/form' element={<Form />} />
+        <Route path='/search' element={<Search />} />
+        <Route path='/entry' element={<Entry />} />
       </Routes>
 
       <Footer />

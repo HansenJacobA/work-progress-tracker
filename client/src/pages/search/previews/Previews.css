@@ -10,6 +10,15 @@
     padding: 10px;
 }
 
+.previews:hover {
+    background-color: var(--teal);
+}
+
+.preview-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
 .previews label {
     display: block;
     font-weight: bold;

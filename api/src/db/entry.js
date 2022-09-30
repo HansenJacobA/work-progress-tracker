@@ -12,7 +12,7 @@ const entryModel = db => {
 
         create(entry) {
 
-            const newEntry = { id: nanoid(), createdAt: Date.now(), ...entry.data };
+            const newEntry = { id: nanoid(), createdAt: new Date().toLocaleString(), ...entry.data };
 
             db.data.entry.push(newEntry);
 
