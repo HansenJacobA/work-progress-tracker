@@ -65,6 +65,7 @@ This is like Twitter, no edits allowed, just write what is current and be able t
     - [SVG Essentials & Animation, v2](https://frontendmasters.com/courses/svg-essentials-animation/)
     - [Building Custom Data Visualizations](https://frontendmasters.com/courses/d3-js-custom-charts/)
     - [Data Visualization for React Developers](https://frontendmasters.com/courses/d3-js-react/)
+- Incorporate [Service Workers](https://serviceworke.rs/)
 
 ### Useful resources
   #### Backend
