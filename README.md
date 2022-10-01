@@ -19,9 +19,11 @@ This is like Twitter, no edits allowed, just write what is current and be able t
 - Install dependencies in both the client and api
   - cd client 
     - npm i
+    - npm start
   - cd api
     - npm i 
-- Open the application on local port 3000 in the browser and use!
+    - npm start
+- Open localhost port 8080 in the browser and use the application 👍
 
 ### Links
 - [GitHub Repository](https://github.com/HansenJacobA/work-progress-tracker)
