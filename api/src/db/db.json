@@ -1,31 +1,4 @@
 {
-  "topic": [
-    {
-      "id": "c1ewFl-xCGicMRHsgZvJH",
-      "createdAt": "9/30/2022, 5:42:40 PM",
-      "name": "asdfasdfasdfasdfasdfasdfa",
-      "complete": false,
-      "completedAt": null
-    }
-  ],
-  "entry": [
-    {
-      "id": "PGUk6pomL_pn8cbtyJbG1",
-      "createdAt": "9/30/2022, 5:42:40 PM",
-      "topic": "asdfasdfasdfasdfasdfasdfa",
-      "yesterday": "asdfasdfasdfasdfasdfasdfa",
-      "today": "asdfasdfasdfasdfasdfasdfa",
-      "continued": "asdfasdfasdfasdfasdfasdfa",
-      "blockers": "asdfasdfasdfasdfasdfasdfa"
-    },
-    {
-      "id": "yW7600ndS2s2uGv0XFdfC",
-      "createdAt": "9/30/2022, 5:44:20 PM",
-      "topic": "asdfasdfasdfasdfasdfasdfa",
-      "yesterday": "asdfasdfasdfasdfasdfasdfa",
-      "today": "asdfasdfasdfasdfasdfasdfa",
-      "continued": "asdfasdfasdfasdfasdfasdfa",
-      "blockers": "vasdfasdfasdfasdfasdfasdfa"
-    }
-  ]
+  "topic": [],
+  "entry": []
 }
