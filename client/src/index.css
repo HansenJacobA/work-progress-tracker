@@ -57,7 +57,8 @@ nav {
 
 .home,
 .form,
-.search {
+.search,
+.loader {
   min-height: 70vh;
 }
 
