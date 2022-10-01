@@ -16,8 +16,18 @@ A daily work tracker to document progress. Can be used to maintain daily organiz
 ## Overview
 This is like Twitter, no edits allowed, just write what is current and be able to query for the data at any time.
 
+### To use this application
+- Install dependencies in both the client and api
+  - cd client 
+    - npm i
+  - cd api
+    - npm i 
+- Open the application on local port 3000 in the browser and use!
+
 ### Screenshot
-![](./screenshot.jpg)
+![](./img/SS_1.png)
+![](./img/SS_2.png)
+![](./img/SS_3.png)
 
 ### Links
 - [GitHub Repository](https://github.com/HansenJacobA/work-progress-tracker)
@@ -43,7 +53,7 @@ This is like Twitter, no edits allowed, just write what is current and be able t
   - Whatever is not directly visable to the user on the webpage, code split it to asynchronously load when the user scrolls, clicks, or anything to trigger later loading of content.
   - Example, code split every single route the user can go to.
   - Example of lazy loading / code splitting using DIS
-  ![](./LL-CS.png)
+  ![](./img/LL-CS.png)
 
 - Tree Shaking
   - Webpack excludes unused functions in a codebase in its' bundles, creating smaller file sizes, however, cannot exclude methods in classes in OOP. So avoid many methods in OOP, use modules/functions.
