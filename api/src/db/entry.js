@@ -14,7 +14,7 @@ const entryModel = db => {
 
             const newEntry = { id: nanoid(), createdAt: new Date().toLocaleString(), ...entry.data };
 
-            db.data.entry.push(newEntry);
+            db.data.entry.unshift(newEntry);
 
             db.write();
 

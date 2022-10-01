@@ -15,7 +15,7 @@ const topicModel = db => {
 
             const newTopic = { id: nanoid(), createdAt: new Date().toLocaleString(), ...topic };
 
-            db.data.topic.push(newTopic);
+            db.data.topic.unshift(newTopic);
 
             db.write();
 
