@@ -13,7 +13,7 @@ A daily work tracker to document progress. Can be used to maintain daily organiz
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-This is like Twitter, no edits allowed, just write what is current and be able to query for the data at any time.
+This is like Twitter, no edits allowed, just write what is current and be able to query by topic at any time.
 
 ### To use this application
 - Install dependencies in both the client and api
@@ -23,7 +23,7 @@ This is like Twitter, no edits allowed, just write what is current and be able t
   - cd api
     - npm i 
     - npm start
-- Open localhost port 8080 in the browser and use the application 👍
+- Open localhost (port in console after client npm start) in the browser and use the application 👍
 
 ### Links
 - [GitHub Repository](https://github.com/HansenJacobA/work-progress-tracker)
@@ -36,8 +36,8 @@ This is like Twitter, no edits allowed, just write what is current and be able t
   - [Webpack](https://webpack.js.org/)
   #### Backend
   - [Node.js](https://nodejs.org/en/)
-  - [Nano ID](https://www.npmjs.com/package/nanoid)
   - [Low DB](https://npm.io/package/lowdb)
+  - [Nano ID](https://www.npmjs.com/package/nanoid)
 
 ### What I learned
 
@@ -72,9 +72,12 @@ This is like Twitter, no edits allowed, just write what is current and be able t
     - [Building Custom Data Visualizations](https://frontendmasters.com/courses/d3-js-custom-charts/)
     - [Data Visualization for React Developers](https://frontendmasters.com/courses/d3-js-react/)
 - Incorporate [Service Workers](https://serviceworke.rs/)
+- Allow CRUD functionality.
 
 ### Useful resources
   #### Backend
+  - [Low DB](https://npm.io/package/lowdb)
+  - [Nano ID](https://www.npmjs.com/package/nanoid)
   - [Morgan](https://www.npmjs.com/package/morgan) - HTTP request logger middleware for node.js.
   - [Body-Parser](https://www.npmjs.com/package/body-parser) - Node.js body parsing middleware.
   - [CORS](https://www.npmjs.com/package/cors) - CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.

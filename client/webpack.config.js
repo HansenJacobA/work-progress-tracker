@@ -41,7 +41,7 @@ module.exports = () => ({
     },
     output: {
         filename: "bundle.js",
-        clean: true
+        // clean: true // Toggle to clean the /dist folder after each build
     },
     plugins: [
         new HtmlWebpackPlugin({
