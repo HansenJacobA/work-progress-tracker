@@ -8,7 +8,6 @@
   --black: #333;
 }
 
-
 html {
   font-size: calc(0.6em + 1vw);
   color: var(--white);
@@ -27,9 +26,7 @@ body * {
   box-sizing: border-box;
 }
 
-header,
-footer {
-  height: 65px;
+header {
   width: 100vw;
   background: var(--blue);
   padding: 10px 30px;
@@ -38,6 +35,7 @@ footer {
 
 footer {
   font-size: calc(0.1em + 1vw);
+  text-align: center;
 }
 
 nav {
@@ -57,10 +55,16 @@ nav {
   color: var(--orange);
 }
 
+.home,
+.form,
+.search,
+.entry {
+  min-height: 70vh;
+}
+
 @media (prefers-color-scheme: dark) {
 
-  header,
-  footer {
+  header {
     background-color: var(--navy);
     color: var(--white);
   }

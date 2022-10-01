@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => (
     <header>
-        Work Progress Tracker 📝
+        <h1>Work Progress Tracker 📝</h1>
     </header>
 );
 

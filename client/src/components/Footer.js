@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
     <footer>
-        Created by Jacob Hansen 🤡
+        <p>Created by Jacob Hansen 🤡</p>
     </footer>
 );
 
