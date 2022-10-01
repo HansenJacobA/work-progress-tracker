@@ -25,9 +25,9 @@ This is like Twitter, no edits allowed, just write what is current and be able t
 - Open the application on local port 3000 in the browser and use!
 
 ### Screenshot
-![](./img/SS_1.png)
-![](./img/SS_2.png)
-![](./img/SS_3.png)
+![](./img/SS_1.png 20x100)
+![](./img/SS_2.png 20x100)
+![](./img/SS_3.png 20x100)
 
 ### Links
 - [GitHub Repository](https://github.com/HansenJacobA/work-progress-tracker)
