@@ -26,6 +26,10 @@ body * {
   box-sizing: border-box;
 }
 
+#root {
+  background: var(--navy);
+}
+
 header {
   width: 100vw;
   background: var(--blue);
@@ -76,6 +80,5 @@ button {
 @media (prefers-color-scheme: dark) {
   header {
     background-color: var(--navy);
-    color: var(--white);
   }
 }

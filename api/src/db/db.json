@@ -10,6 +10,15 @@
   ],
   "entry": [
     {
+      "id": "I6bS0mv1pmthF5biJoy3E",
+      "createdAt": "10/2/2022, 12:25:55 PM",
+      "topic": "Work Progress Tracker Application",
+      "yesterday": "Trying to incorporate a service worker into this application to turn it into a PWA.",
+      "today": "Deleted all previous work to bring application back to a working state.",
+      "continued": "Implementing a service worker and turning this application into a PWA is still required. Utilizing local storage instead of a server and DB is also required.",
+      "blockers": "Service worker errors in console are numerous and confusing."
+    },
+    {
       "id": "3D-VNu5vdh6uzOHusswjR",
       "createdAt": "10/1/2022, 12:27:43 AM",
       "topic": "Work Progress Tracker Application",
