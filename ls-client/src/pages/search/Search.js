@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { Link } from "react-router-dom";
 import css from './Search.css';
 import Previews from './previews/Previews';
 
@@ -9,21 +9,26 @@ const Search = () => {
     const [entries, setEntries] = useState([]);
     const [allTopics, setAllTopics] = useState([]);
 
+    const ALL_TOPICS = 'allTopics';
+    const ALL_ENTRIES = 'allEntries';
+
     useEffect(() => {
-        axios.get('http://localhost:4000/api/topic').then(({ data }) => {
-            setAllTopics(data.data);
-        });
+        const localTopics = getItem(ALL_TOPICS);
+        setAllTopics(localTopics || allTopics);
     }, [false]);
 
     const getEntries = async (e) => {
         e.preventDefault();
-        if (allTopics.find(({ name }) => name === selectedTopic) == undefined) {
-            setEntries([]);
-        } else {
-            await axios.get(`http://localhost:4000/api/entry/topic/${selectedTopic}`)
-                .then(({ data }) => setEntries(data.data));
+        if (allTopics.find(({ name }) => name === selectedTopic) !== undefined) {
+            const localEntries = getItem(ALL_ENTRIES);
+            const topicEntries = localEntries.filter(entry => entry.topic == selectedTopic);
+            setEntries(topicEntries);
         }
     };
+
+    const getItem = (key) => JSON.parse(localStorage.getItem(key));
+
+    const clearLocalStorage = (e) => localStorage.clear();
 
     return (
         <section className='search'>
@@ -45,6 +50,10 @@ const Search = () => {
                     :
                     <span>No previews for this topic.</span>}
             </ul>
+
+            <Link to='/' className='form-button'>
+                <button onClick={clearLocalStorage}>Clear Storage</button>
+            </Link>
         </section>
     );
 };
