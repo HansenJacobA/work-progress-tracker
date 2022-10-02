@@ -29,16 +29,14 @@
     height: calc(1rem + 1vw);
     font-size: calc(0.2em + 1vw);
     margin: 0 auto;
-    margin-bottom: 0.4em;
+    margin-bottom: 2em;
 }
 
 .form-button {
     text-decoration: none;
 }
 
-
 @media (prefers-color-scheme: dark) {
-
     .form {
         background-color: var(--navy);
     }

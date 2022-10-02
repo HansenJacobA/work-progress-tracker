@@ -1,4 +1,22 @@
 {
-  "topic": [],
-  "entry": []
+  "topic": [
+    {
+      "id": "j2r2hDIOYZA4RAgdRMpFn",
+      "createdAt": "10/1/2022, 12:27:43 AM",
+      "name": "Work Progress Tracker Application",
+      "complete": false,
+      "completedAt": null
+    }
+  ],
+  "entry": [
+    {
+      "id": "3D-VNu5vdh6uzOHusswjR",
+      "createdAt": "10/1/2022, 12:27:43 AM",
+      "topic": "Work Progress Tracker Application",
+      "yesterday": "Learning and using Low DB for the API as well as building frontend structure and routes for the client.",
+      "today": "Completed main functionality and views of the application for regular use. Application can be considered fully developed for my personal use, job complete. Website was scored using lighthouse and received all 100's and one 96 score in performance due to largest contentful paint time.",
+      "continued": "Make this application available to anyone by making it into a progressive web application for download from google chrome.",
+      "blockers": "Learn how to create PWA and service workers."
+    }
+  ]
 }

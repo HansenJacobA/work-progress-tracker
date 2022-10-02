@@ -12,6 +12,18 @@ const Form = () => {
   const [blockers, setBlockers] = useState('');
   const [allTopics, setAllTopics] = useState([]);
 
+  useEffect(() => {
+    // Check local storage for allTopics
+    const locallyStoredTopics = JSON.parse(localStorage.getItem('allTopics'));
+    if (locallyStoredTopics) {
+      setAllTopics(locallyStoredTopics);
+    } else {
+      axios.get('http://localhost:4000/api/topic').then(({ data }) => {
+        setAllTopics(data.data);
+      });
+    }
+  }, [false]);
+
   const sendSubmits = async () => {
     // Handle new topic by submitting new topic
     if (allTopics.find(({ name }) => name === topic) == undefined) {
@@ -25,13 +37,13 @@ const Form = () => {
     // Submit new entry
     await axios.post('http://localhost:4000/api/entry', { data: { topic, yesterday, today, continued, blockers } })
       .then(() => console.log('Entry Saved'));
+    // Save to local storage...
+    saveToLocalStorage();
   };
 
-  useEffect(() => {
-    axios.get('http://localhost:4000/api/topic').then(({ data }) => {
-      setAllTopics(data.data);
-    });
-  }, [false]);
+  const saveToLocalStorage = () => {
+    localStorage.setItem('allTopics', JSON.stringify(allTopics));
+  };
 
   return (
     <section className='form'>

@@ -31,11 +31,15 @@ header {
   background: var(--blue);
   padding: 10px 30px;
   text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 footer {
   font-size: calc(0.1em + 1vw);
   text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 nav {
@@ -44,6 +48,8 @@ nav {
   align-items: center;
   background-color: var(--teal);
   padding: 0.5em 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .nav-link {
@@ -55,6 +61,11 @@ nav {
   color: var(--orange);
 }
 
+button {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .home,
 .form,
 .search,
@@ -63,7 +74,6 @@ nav {
 }
 
 @media (prefers-color-scheme: dark) {
-
   header {
     background-color: var(--navy);
     color: var(--white);
