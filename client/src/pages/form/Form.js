@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import axios from 'axios';
+import { nanoid } from 'nanoid';
 import css from './Form.css';
 
 const Form = () => {
@@ -12,30 +12,55 @@ const Form = () => {
   const [blockers, setBlockers] = useState('');
   const [allTopics, setAllTopics] = useState([]);
 
+  const getItem = (key) => JSON.parse(localStorage.getItem(key));
+  const setItem = (key, value) => localStorage.setItem(key, JSON.stringify(value));
+
+  const ALL_TOPICS = 'allTopics';
+  const ALL_ENTRIES = 'allEntries';
+
   useEffect(() => {
-
-    axios.get('http://localhost:4000/api/topic').then(({ data }) => {
-      setAllTopics(data.data);
-    });
-
+    const localTopics = getItem(ALL_TOPICS);
+    if (localTopics) {
+      setAllTopics(localTopics);
+    } else {
+      setItem(ALL_TOPICS, allTopics);
+    }
   }, [false]);
 
   const sendSubmits = async () => {
     // Handle new topic by submitting new topic
-
     if (allTopics.find(({ name }) => name === topic) == undefined) {
       const newTopic = {
+        id: nanoid(),
+        createdAt: new Date().toLocaleString(),
         name: topic,
         complete: false,
         completedAt: null
-      }
-      await axios.post('http://localhost:4000/api/topic', newTopic);
+      };
+      const newAllTopics = [...allTopics, newTopic];
+      setItem(ALL_TOPICS, newAllTopics);
     };
 
     // Submit new entry
-    await axios.post('http://localhost:4000/api/entry', { data: { topic, yesterday, today, continued, blockers } })
-      .then(() => console.log('Entry Saved'));
+    const newEntry = {
+      id: nanoid(),
+      createdAt: new Date().toLocaleString(),
+      topic,
+      yesterday,
+      today,
+      continued,
+      blockers
+    };
+
+    const localEntries = getItem(ALL_ENTRIES);
+
+    if (localEntries) {
+      setItem(ALL_ENTRIES, [...localEntries, newEntry]);
+    } else {
+      setItem(ALL_ENTRIES, [newEntry]);
+    }
   };
+
 
   return (
     <section className='form'>
@@ -62,6 +87,7 @@ const Form = () => {
         <Link to='/' className='form-button'>
           <button onClick={sendSubmits}>Submit</button>
         </Link>
+
       </form>
     </section>
   );
