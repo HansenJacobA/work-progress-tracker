@@ -16,14 +16,7 @@ A daily work tracker to document progress. Can be used to maintain daily organiz
 This is like Twitter, no edits allowed, just write what is current and be able to query by topic at any time.
 
 ### To use this application
-- Install dependencies in both the client and api
-  - cd client 
-    - npm i
-    - npm start
-  - cd api
-    - npm i 
-    - npm start
-- Open localhost (port in console after client npm start) in the browser and use the application 👍
+Go [here](https://hansenjacoba.github.io/projects/frontend/pwa/index.html) and download the application (add to home) using safari and use the application online or offline!
 
 ### Links
 - [GitHub Repository](https://github.com/HansenJacobA/work-progress-tracker)
