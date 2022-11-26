@@ -79,7 +79,7 @@ The application as a while needed an overhaul in its structure and UX. Starting 
 
 With that, the application has tranformed several times and grown into a developing teenager. There is still more work to incorporate, such as unit testing, improving the service worker (it throws errors), incorporating Husky and CircleCi, trying to Dockerize the application (Kubernetes? Idk what that is, but maybe it could be done), and integrating D3Js graphics into the application.
 
-The point of the transformations is to learn the technology by getting the hands dirty while improving this application. I think the next phase could reasonable be turning this application into a Vite application and incorporate Vitest testing.
+The point of the transformations is to learn the technology by getting the hands dirty while improving this application. I think the next phase could reasonably be turning this application into a Vite application and incorporate Vitest testing.
 
 ## Author
 
