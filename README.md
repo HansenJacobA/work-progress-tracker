@@ -32,7 +32,7 @@ Open the website link below and if you are using Google Chrome, the download app
 
 ## Links
 
-- [Website](tworker.vercel.app)
+- [Website](https://tworker.vercel.app/home)
 - [Newest Stage Repository](https://github.com/HansenJacobA/tworker)
 
 ## My process
