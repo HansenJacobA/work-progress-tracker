@@ -16,7 +16,7 @@ This repository holds the various stages of progress made towards the Work Progr
 
 ## Overview
 
-Having completed Hack Reactor's Advanced Software Engineering Immersive Program in May, 2022, the ritual of stand up meetings and its' ideal structure were taught. Answer the following questions in order with concise detail. What work was done yesterday, what will you do today, and what are your blockers?
+Having completed Hack Reactor's Advanced Software Engineering Immersive Program in May, 2022, the ritual of stand up meetings and its' ideal structure was introduced. Answer the following questions in order with concise detail. What work was done yesterday, what will you do today, and what are your blockers?
 
 Within HR, we used excel sheets to record the teams reports, but we would often forget to record and only report on the spot. As the saying goes, "Out of sight, out of mind". It also felt uncomfortable and vulnurable to have personal work progress in a public bucket for all to see, so I would hope others would 'forget' to record entries. There is no issue that requires teams as a whole to record individual reports longterm, so what is the purpose of recording? Answer, individual profit.
 
