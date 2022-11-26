@@ -34,6 +34,8 @@ Open the website link below and if you are using Google Chrome, the download app
 
 - [Website](https://tworker.vercel.app/home)
 - [Newest Stage Repository](https://github.com/HansenJacobA/tworker)
+- [Newest Version](https://tworker.vercel.app/home)
+- [Original Version](https://hansenjacoba.github.io/projects/frontend/pwa/index.html)
 
 ## My process
 
