@@ -4,10 +4,10 @@ import Detail from "./detail";
 import { subjects } from "../../utilities/postContent";
 import { details } from "../../utilities/postContent";
 
-export default function Post({ post }) {
+export default function Post({ post }: { post: Post }) {
   const postDetails = details(post);
   return (
-    <Flex w="100%" direction="column" justify="center">
+    <Flex w="100%" direction="column" justify="center" mb={10}>
       {postDetails.map((detail, index) => {
         const subject = subjects[index];
         return (

@@ -83,6 +83,14 @@ With that, the application has tranformed several times and grown into a develop
 
 The point of the transformations is to learn the technology by getting the hands dirty while improving this application. I think the next phase could reasonably be turning this application into a Vite application and incorporate Vitest testing.
 
+#### Stage 5
+
+After phase 4, a Lighthouse Audit was done on the page and the scores were bad. The project also did not have any linters. An easy boost to this application was incorporating eslint and a11y-jsx linter, which exposed a lot of remaining required typescript. Easy and satisfying fixes to make the application 'type safe'. The Lighthouse audit required adding information into the html header component for the PWA score, allowing input field zooms to increase accessibility ratings, and fixed the service worker bug, that dropped the performance score due to console errors. In regards to the service worker, I had repetative assets, so making one asset to the public directory solved all the bugs and after completing all audit suggestions, the application now has all 100's 🎉
+
+The next step is to create a react native version and put this in the app store and google play and see what happens. That will be phase 6 in the near future. Til then is a screenshot of the 100's!
+
+![Screenshot](./img/LH-100.png)
+
 ## Author
 
 - [Portfolio](https://hansenjacoba.github.io/)

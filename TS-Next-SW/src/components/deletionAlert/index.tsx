@@ -10,9 +10,18 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { MutableRefObject } from "react";
 import seedDown from "../../utilities/seedDown";
 
-export default function DeletionAlert({ isOpen, onClose, cancelRef }) {
+export default function DeletionAlert({
+  isOpen,
+  onClose,
+  cancelRef,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+  cancelRef: MutableRefObject<undefined>;
+}) {
   const toast = useToast();
   return (
     <>
@@ -28,7 +37,7 @@ export default function DeletionAlert({ isOpen, onClose, cancelRef }) {
             </AlertDialogHeader>
 
             <AlertDialogBody>
-              Are you sure? You can't undo this action afterwards.
+              Are you sure? You cannot undo this action afterwards.
             </AlertDialogBody>
 
             <AlertDialogFooter>

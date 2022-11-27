@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import PostPreview from "../postPreview";
 import SelectTopic from "../selectTopic";
 import { Flex, Input, Text } from "@chakra-ui/react";
@@ -40,7 +40,7 @@ export default function SearchTopic() {
           list="topics"
           placeholder="Select topic"
         />
-        <SelectTopic topics={topics} />
+        <SelectTopic topics={Object.values(topics)} />
       </Flex>
 
       <Flex
@@ -55,7 +55,7 @@ export default function SearchTopic() {
         maxW={350}
       >
         {posts.length ? (
-          posts.map((post) => (
+          posts.map((post: Post) => (
             <PostPreview post={post} key={post.id} checkbox={false} />
           ))
         ) : (
